@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directives & Cahier des Charges - Mini-Projet Data Mining 2026/2027</title>
+    <meta name="description" content="Guide officiel, directives, grille d'évaluation et exemples de référence du Mini-Projet de Fouille de Données (Data Mining).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Animated Mesh -->
+    <div class="bg-mesh"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <i class="fa-solid fa-brain-circuit brand-icon"></i>
+                <span>DATA MINING <small>2026/2027</small></span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#overview"><i class="fa-solid fa-compass"></i> Aperçu</a>
+                <a href="#rules"><i class="fa-solid fa-gavel"></i> Règles</a>
+                <a href="#ai-policy"><i class="fa-solid fa-robot"></i> Usage IA</a>
+                <a href="#tracks"><i class="fa-solid fa-diagram-project"></i> Parcours</a>
+                <a href="#bareme"><i class="fa-solid fa-list-check"></i> Barème</a>
+                <a href="#email-tool"><i class="fa-solid fa-envelope-circle-check"></i> Email Builder</a>
+                <a href="#reference"><i class="fa-solid fa-heart-pulse"></i> Projet Modèle</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="mini_project_proposal.pdf" download class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-file-pdf"></i> Télécharger PDF
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="overview">
+            <div class="badge-pill">
+                <span class="pulse-dot"></span> CAHIER DES CHARGES OFFICIEL • ANNÉE ACADÉMIQUE 2026/2027
+            </div>
+            
+            <h1 class="hero-title">
+                Mini-Projet de Fouille de Données 
+                <span class="gradient-text">(Data Mining)</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Concevez un pipeline d'analyse de données de bout en bout (<i>End-to-End Data Science Pipeline</i>), 
+                déployez une application web interactive et produisez un rapport scientifique de niveau recherche.
+            </p>
+
+            <!-- Key Metric Cards Grid -->
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon icon-cyan"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-value">3 à 6</div>
+                    <div class="stat-label">Étudiants par Équipe</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon icon-blue"><i class="fa-solid fa-database"></i></div>
+                    <div class="stat-value">≥ 10 000</div>
+                    <div class="stat-label">Lignes de Données Min.</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon icon-gold"><i class="fa-solid fa-award"></i></div>
+                    <div class="stat-value">20.0 Pts</div>
+                    <div class="stat-label">Barème Analytique</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon icon-purple"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="stat-value">GitHub + Web</div>
+                    <div class="stat-label">Traçabilité & Déploiement</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- General Rules & Git Traceability -->
+        <section class="section-block" id="rules">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-shield-halved"></i> Directives Générales & Traçabilité Git</h2>
+                <p>Modalités d'organisation, règles de confidentialité et discipline de dépôt.</p>
+            </div>
+
+            <div class="cards-grid-2">
+                <!-- Card 1: Team & Git Policy -->
+                <div class="glass-card card-accent-red">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code-commit card-icon-red"></i>
+                        <h3>Politique Git Strict & Traçabilité</h3>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Dépôt GitHub Public Obligatoire :</strong> Chaque projet doit être entièrement hébergé sur un dépôt GitHub public.</li>
+                        <li><strong>Contributions Individuelles :</strong> Chaque membre doit contribuer avec son propre compte GitHub (commits réguliers, branches et Pull Requests).</li>
+                        <li><strong>Pénalité Sanction :</strong> Un membre présentant un historique Git vierge ou symbolique recevra la note de <strong>0/20 à titre individuel</strong>.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Anonymity Rules -->
+                <div class="glass-card card-accent-gold">
+                    <div class="card-header">
+                        <i class="fa-solid fa-user-ninja card-icon-gold"></i>
+                        <h3>Anonymat sur les Supports Publics</h3>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Interdiction des Noms Réels :</strong> Interdiction de mentionner les noms et prénoms réels dans les notebooks, le <code>README.md</code> ou le rapport PDF.</li>
+                        <li><strong>Format du Code Étudiant :</strong> Utiliser exclusivement le code attribué (ex : <code>IASD01</code>, <code>IASD02</code>, <code>IASD03</code>).</li>
+                        <li><strong>Spécialité + Numéro :</strong> Indiquer la spécialité suivie du numéro d'ordre dans l'équipe.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Usage & Responsibility Banner -->
+        <section class="section-block" id="ai-policy">
+            <div class="glass-card ai-banner">
+                <div class="ai-banner-header">
+                    <div class="ai-icon-wrapper">
+                        <i class="fa-solid fa-microchip-ai"></i>
+                    </div>
+                    <div>
+                        <h2>Politique d'Utilisation de l'IA & Responsabilité Académique</h2>
+                        <p class="subtitle-text">Règles d'encadrement des assistants génératifs (ChatGPT, Claude, Copilot, Gemini).</p>
+                    </div>
+                </div>
+
+                <div class="ai-grid">
+                    <div class="ai-box box-allow">
+                        <div class="ai-box-title"><i class="fa-solid fa-circle-check"></i> Usage Autorisé</div>
+                        <p>L'utilisation des assistants IA est <strong>autorisée</strong> comme aide à la rédaction, à la recherche documentaire et au débogage du code source.</p>
+                    </div>
+
+                    <div class="ai-box box-warn">
+                        <div class="ai-box-title"><i class="fa-solid fa-scale-balanced"></i> Responsabilité Totale</div>
+                        <p>Les étudiants demeurent <strong>100% responsables</strong> de la rigueur scientifique, mathématique et de l'exactitude de tout code ou texte généré.</p>
+                    </div>
+
+                    <div class="ai-box box-danger">
+                        <div class="ai-box-title"><i class="fa-solid fa-triangle-exclamation"></i> Audition Orale d'Audit</div>
+                        <p>En cas de suspicion d'IA non vérifiée (hallucinations, concepts incohérents), les étudiants seront <strong>convoqués individuellement à une audition orale d'évaluation</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Tracks Section -->
+        <section class="section-block" id="tracks">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-layer-group"></i> Parcours Techniques Algorithmiques</h2>
+                <p>Sélectionnez au choix le parcours de classification supervisée ou de clustering non supervisé.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab('supervised')">
+                    <i class="fa-solid fa-bullseye"></i> Parcours A : Classification Supervisée
+                </button>
+                <button class="tab-btn" onclick="switchTab('unsupervised')">
+                    <i class="fa-solid fa-chart-pie"></i> Parcours B : Clustering Non Supervisé
+                </button>
+            </div>
+
+            <!-- Supervised Tab Content -->
+            <div id="tab-supervised" class="tab-content active">
+                <div class="glass-card">
+                    <h3><i class="fa-solid fa-brain"></i> Algorithmes Obligatoires à Implémenter</h3>
+                    <div class="algo-grid">
+                        <div class="algo-item">
+                            <span class="algo-badge">01</span>
+                            <h4>Baseline (Zero-R)</h4>
+                            <p>Classifieur naïf de référence basé sur la classe prioritaire.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">02</span>
+                            <h4>K-Nearest Neighbors (K-NN)</h4>
+                            <p>Analyse de la métrique de distance et étude de l'impact de $K$.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">03</span>
+                            <h4>Arbres & Random Forest</h4>
+                            <p>Gain d'information, Indice de Gini et élagage par coût-complexité.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">04</span>
+                            <h4>Naïve Bayes</h4>
+                            <p>GaussianNB / MultinomialNB avec lissage de Laplace.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">05</span>
+                            <h4>Support Vector Machines (SVM)</h4>
+                            <p>Évaluation des noyaux (RBF, Linéaire, Poly) et tuning $(C, \gamma)$.</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-bar">
+                        <strong><i class="fa-solid fa-chart-line"></i> Métriques d'Évaluation Exigées :</strong> 
+                        <span class="tag">Matrice de Confusion</span>
+                        <span class="tag">Accuracy</span>
+                        <span class="tag">Précision</span>
+                        <span class="tag">Rappel</span>
+                        <span class="tag">F1-Score</span>
+                        <span class="tag">Courbes ROC-AUC</span>
+                        <span class="tag">K-Fold Cross Validation ($K \ge 5$)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unsupervised Tab Content -->
+            <div id="tab-unsupervised" class="tab-content">
+                <div class="glass-card">
+                    <h3><i class="fa-solid fa-circle-nodes"></i> Familles de Clustering à Implémenter</h3>
+                    <div class="algo-grid">
+                        <div class="algo-item">
+                            <span class="algo-badge">01</span>
+                            <h4>K-Means Clustering</h4>
+                            <p>Méthode du coude (Elbow Method) et initialisation K-Means++.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">02</span>
+                            <h4>K-Medoids (PAM)</h4>
+                            <p>Comparaison de la robustesse face aux valeurs aberrantes.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">03</span>
+                            <h4>AGNES (Agglomératif)</h4>
+                            <p>Construction du dendrogramme avec liaisons Ward, Complete, Single.</p>
+                        </div>
+                        <div class="algo-item">
+                            <span class="algo-badge">04</span>
+                            <h4>DIANA (Divisif)</h4>
+                            <p>Analyse top-down de la séparation hiérarchique des groupes.</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-bar">
+                        <strong><i class="fa-solid fa-chart-line"></i> Métriques d'Évaluation Exigées :</strong> 
+                        <span class="tag">Score de Silhouette $s(i)$</span>
+                        <span class="tag">Indice Davies-Bouldin (DBI)</span>
+                        <span class="tag">Indice de Dunn</span>
+                        <span class="tag">Rand Index (ARI/NMI)</span>
+                        <span class="tag">Projection PCA 2D/3D</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evaluation Grid (Barème sur 20.0 Pts) -->
+        <section class="section-block" id="bareme">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-table-list"></i> Grille d'Évaluation Hyper-Détaillée (Barème sur 20.0 Points)</h2>
+                <p>Sous-fractionnement analytique pour une notation transparente et sans ambiguïté.</p>
+            </div>
+
+            <!-- Search Filter Bar -->
+            <div class="search-bar-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="bareme-search" placeholder="Rechercher un critère (ex: EDA, SVM, Streamlit, Git, README)..." onkeyup="filterBareme()">
+            </div>
+
+            <div class="table-responsive">
+                <table class="styled-table" id="bareme-table">
+                    <thead>
+                        <tr>
+                            <th>Sous-Critère</th>
+                            <th>Exigences Techniques & Critères de Notation</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-section-row">
+                            <td colspan="3"><i class="fa-solid fa-vial-circle-check"></i> PARTIE 1 : RIGUEUR TECHNIQUE & DATA MINING (10.0 POINTS)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1.1 Prétraitement des Données</strong></td>
+                            <td>Nettoyage des valeurs manquantes/aberrantes, encodage (One-Hot/Label/Binary), normalisation/standardisation (Z-score/Min-Max).</td>
+                            <td><span class="badge-pts">2.0 pts</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>1.2 EDA & Tests Statistiques</strong></td>
+                            <td>Visualisations des distributions, matrice de corrélation, tests statistiques (χ², Mann-Whitney U, ANOVA, Shapiro-Wilk, Spearman/Pearson).</td>
+                            <td><span class="badge-pts">3.0 pts</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>1.3 Implémentation des Modèles</strong></td>
+                            <td>Implémentation rigoureuse de TOUS les algorithmes du parcours choisi (Zero-R, KNN, Arbre/RF, Naïve Bayes, SVM ou K-Means, PAM, AGNES, DIANA).</td>
+                            <td><span class="badge-pts">1.0 pt</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>1.4 Optimization & Validation Croisée</strong></td>
+                            <td>Réglage des hyperparamètres (GridSearch/RandomSearch) et validation croisée K-Fold ($K \ge 5$).</td>
+                            <td><span class="badge-pts">2.0 pts</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>1.5 Analyse des Métriques</strong></td>
+                            <td>Tableau comparatif multicritère, matrices de confusion, courbes ROC-AUC, Precision/Recall/F1 ou Silhouette/DBI/ARI.</td>
+                            <td><span class="badge-pts">2.0 pts</span></td>
+                        </tr>
+
+                        <tr class="table-section-row">
+                            <td colspan="3"><i class="fa-solid fa-desktop"></i> PARTIE 2 : APPLICATION INTERACTIVE & ERGONOMIE (4.0 POINTS)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2.1 Architecture UI & Stabilité</strong></td>
+                            <td>Application web/desktop fonctionnelle sans bugs (Streamlit, Gradio, Dash), code propre dans <code>src/app.py</code>.</td>
+                            <td><span class="badge-pts">1.5 pts</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2.2 Dashboard EDA Interactif</strong></td>
+                            <td>Composant d'exploration dynamique permettant de filtrer les données et visualiser interactivement les graphiques.</td>
+                            <td><span class="badge-pts">1.0 pt</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2.3 Prédiction Temps Réel</strong></td>
+                            <td>Formulaire dynamique de saisie générant des prédictions instantanées avec confiance/probabilité associée.</td>
+                            <td><span class="badge-pts">1.5 pts</span></td>
+                        </tr>
+
+                        <tr class="table-section-row">
+                            <td colspan="3"><i class="fa-solid fa-code-branch"></i> PARTIE 3 : TRAÇABILITÉ GIT & COMMITS INDIVIDUELS (3.0 POINTS)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3.1 Structure du Dépôt</strong></td>
+                            <td>Respect de l'arborescence (<code>data/</code>, <code>notebooks/</code>, <code>src/</code>, <code>docs/</code>), présence de <code>requirements.txt</code>.</td>
+                            <td><span class="badge-pts">1.0 pt</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>3.2 Commits Individuels</strong></td>
+                            <td>Régularité des commits personnels sur GitHub. <strong>Note : Pénalité 0/20 attribuée individuellement si l'historique est vierge.</strong></td>
+                            <td><span class="badge-pts">2.0 pts</span></td>
+                        </tr>
+
+                        <tr class="table-section-row">
+                            <td colspan="3"><i class="fa-solid fa-file-signature"></i> PARTIE 4 : RAPPORT PDF & DOCUMENTATION GITHUB (3.0 POINTS)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4.1 Rapport Scientifique PDF</strong></td>
+                            <td>Rapport académique rédigé sous <code>docs/Rapport_MiniProject.pdf</code> (Problématique, méthodologie, justifications théoriques, résultats).</td>
+                            <td><span class="badge-pts">1.5 pts</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>4.2 Documentation README.md</strong></td>
+                            <td>README.md complet avec guide d'installation, matrice nominative des rôles et synthèse des résultats clés.</td>
+                            <td><span class="badge-pts">1.5 pts</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Interactive Email Header Generator Tool -->
+        <section class="section-block" id="email-tool">
+            <div class="glass-card email-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-paper-plane card-icon-cyan"></i>
+                    <div>
+                        <h2>Générateur Interactif d'Objet d'Email Officiel</h2>
+                        <p class="subtitle-text">Toutes les soumissions doivent être envoyées à <strong>datamining.project.student@gmail.com</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="email-form-grid">
+                    <div class="form-group">
+                        <label for="email-type"><i class="fa-solid fa-list-check"></i> Type d'Email :</label>
+                        <select id="email-type" onchange="generateEmailSubject()">
+                            <option value="INSCRIPTION">Étape 1 : Inscription de l'Équipe & Sujet (Max 15 Sept 2026)</option>
+                            <option value="QUESTION">Étape 2 : Support & Question Technique</option>
+                            <option value="RENDU-FINAL">Étape 3 : Déclaration de Rendu Final (Déclenche la note)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="leader-code"><i class="fa-solid fa-user-shield"></i> Code Étudiant du Leader :</label>
+                        <input type="text" id="leader-code" value="IASD01" placeholder="ex: IASD01" onkeyup="generateEmailSubject()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-name"><i class="fa-solid fa-folder-heading"></i> Nom du Projet / Sujet :</label>
+                        <input type="text" id="project-name" value="Prédiction Risque Cardiaque" placeholder="ex: Détection de Fraude" onkeyup="generateEmailSubject()">
+                    </div>
+                </div>
+
+                <!-- Generated Email Output Display -->
+                <div class="email-output-box">
+                    <div class="output-header">
+                        <span><i class="fa-solid fa-envelope-open-text"></i> Objet de l'Email Généré :</span>
+                        <button class="btn btn-outline btn-sm" onclick="copyEmailSubject()"><i class="fa-solid fa-copy"></i> Copier l'Objet</button>
+                    </div>
+                    <code id="generated-subject" class="code-display">[DM-2026][INSCRIPTION] Groupe IASD01 - Prédiction Risque Cardiaque</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reference Project Showcase -->
+        <section class="section-block" id="reference">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-star"></i> Projet Modèle de Référence (Heart Disease Prediction)</h2>
+                <p>Découvrez le projet étalon démontrant l'excellence technique attendue.</p>
+            </div>
+
+            <div class="glass-card ref-card">
+                <div class="ref-header">
+                    <div class="ref-badge">PROJET ÉTALON COMPLET</div>
+                    <h3>Prédiction du Risque Cardiaque par Machine Learning & Web App</h3>
+                    <p>Dataset Kaggle <code>uditjain13/heart-disease-risk-2026</code> ($N = 9\,000$ enregistrements, 25 attributs). Benchmark de 6 classifieurs avec SVM (RBF) atteignant <strong>89.17% d'Accuracy</strong> et <strong>0.9422 de ROC-AUC</strong>.</p>
+                </div>
+
+                <!-- Reference Links Buttons -->
+                <div class="ref-links-grid">
+                    <a href="https://dmproject2.streamlit.app/" target="_blank" class="ref-btn btn-streamlit">
+                        <i class="fa-solid fa-globe"></i> Application Web Live (Streamlit)
+                    </a>
+                    <a href="https://github.com/hosniadilemp-a11y/DataMiningProjectExample.git" target="_blank" class="ref-btn btn-github">
+                        <i class="fa-brands fa-github"></i> Dépôt GitHub Modèle
+                    </a>
+                    <a href="https://github.com/hosniadilemp-a11y/DataMiningProjectExample/blob/main/docs/Rapport_MiniProject.pdf" target="_blank" class="ref-btn btn-pdf">
+                        <i class="fa-solid fa-file-pdf"></i> Rapport PDF (40 Pages)
+                    </a>
+                </div>
+
+                <!-- Figure Image Gallery Carousel -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="figures/roc_curves.png" alt="Courbes ROC">
+                        <div class="gallery-caption">Courbes ROC (SVM AUC = 0.9422)</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="figures/confusion_matrices.png" alt="Matrices de Confusion">
+                        <div class="gallery-caption">Matrices de Confusion (6 Modèles)</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="figures/feature_importance_comp.png" alt="Importance des Variables">
+                        <div class="gallery-caption">Importance Consensus des Variables</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p><i class="fa-solid fa-graduation-cap"></i> Cours de Fouille de Données (Data Mining) • Année Académique 2026/2027</p>
+            <p class="footer-sub">Directives et cahier des charges officiels du mini-projet.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
