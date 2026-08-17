@@ -14,6 +14,20 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- MathJax for LaTeX Math Rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -63,6 +77,19 @@
                 Mini-Projet de Fouille de Données 
                 <span class="gradient-text">(Data Mining)</span>
             </h1>
+
+            <!-- Updates Notice Banner -->
+            <div class="updates-banner">
+                <div class="updates-line"></div>
+                <div class="updates-content">
+                    <i class="fa-solid fa-bullhorn updates-icon"></i>
+                    <a href="https://hosniadilemp-a11y.github.io/DataMiningProjectPage/" target="_blank" class="updates-link">
+                        Toutes les nouvelles mises à jour seront disponibles ici
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="updates-line"></div>
+            </div>
             
             <p class="hero-subtitle">
                 Concevez un pipeline d'analyse de données de bout en bout (<i>End-to-End Data Science Pipeline</i>), 
@@ -294,12 +321,12 @@
                         </tr>
                         <tr>
                             <td><strong>1.1 Prétraitement des Données</strong></td>
-                            <td>Nettoyage des valeurs manquantes/aberrantes, encodage (One-Hot/Label/Binary), normalisation/standardisation (Z-score/Min-Max).</td>
+                            <td>Nettoyage des valeurs manquantes/aberrantes, encodage (One-Hot/Label/Binary), normalisation/standardisation ($Z$-score/Min-Max/Robust Scaling).</td>
                             <td><span class="badge-pts">2.0 pts</span></td>
                         </tr>
                         <tr>
                             <td><strong>1.2 EDA & Tests Statistiques</strong></td>
-                            <td>Visualisations des distributions, matrice de corrélation, tests statistiques (χ², Mann-Whitney U, ANOVA, Shapiro-Wilk, Spearman/Pearson).</td>
+                            <td>Visualisations des distributions, matrice de corrélation, tests statistiques ($\chi^2$, Mann-Whitney $U$, ANOVA, Shapiro-Wilk, Spearman/Pearson).</td>
                             <td><span class="badge-pts">3.0 pts</span></td>
                         </tr>
                         <tr>
@@ -314,7 +341,7 @@
                         </tr>
                         <tr>
                             <td><strong>1.5 Analyse des Métriques</strong></td>
-                            <td>Tableau comparatif multicritère, matrices de confusion, courbes ROC-AUC, Precision/Recall/F1 ou Silhouette/DBI/ARI.</td>
+                            <td>Tableau comparatif multicritère, matrices de confusion, courbes ROC-AUC, Precision/Recall/F1-Score ou Silhouette $s(i)$ / DBI / ARI.</td>
                             <td><span class="badge-pts">2.0 pts</span></td>
                         </tr>
 
