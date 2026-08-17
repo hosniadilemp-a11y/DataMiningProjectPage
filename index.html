@@ -107,7 +107,7 @@
                 <div class="stat-card">
                     <div class="stat-icon icon-blue"><i class="fa-solid fa-database"></i></div>
                     <div class="stat-value">≥ 10 000</div>
-                    <div class="stat-label">Lignes de Données Min.</div>
+                    <div class="stat-label">Lignes Brutes & ≥10 Attributs</div>
                 </div>
 
                 <div class="stat-card">
@@ -168,25 +168,25 @@
                         <i class="fa-solid fa-microchip-ai"></i>
                     </div>
                     <div>
-                        <h2>Politique d'Utilisation de l'IA & Responsabilité Académique</h2>
-                        <p class="subtitle-text">Règles d'encadrement des assistants génératifs (ChatGPT, Claude, Copilot, Gemini).</p>
+                        <h2>Politique d'IA Générative & Distinction ML vs. Outils LLM</h2>
+                        <p class="subtitle-text">Encadrement strict des modèles de Machine Learning et de l'intégration des LLM dans l'application.</p>
                     </div>
                 </div>
 
                 <div class="ai-grid">
                     <div class="ai-box box-allow">
-                        <div class="ai-box-title"><i class="fa-solid fa-circle-check"></i> Usage Autorisé</div>
-                        <p>L'utilisation des assistants IA est <strong>autorisée</strong> comme aide à la rédaction, à la recherche documentaire et au débogage du code source.</p>
+                        <div class="ai-box-title"><i class="fa-solid fa-circle-check"></i> ML Classique Obligatoire</div>
+                        <p>Seuls les <strong>algorithmes de ML classiques</strong> (du cours et extensions) doivent être utilisés pour le modèle prédictif ou le clustering. Les modèles Deep Learning et LLM sont <strong>strictement interdits comme modèles ML</strong>.</p>
                     </div>
 
                     <div class="ai-box box-warn">
-                        <div class="ai-box-title"><i class="fa-solid fa-scale-balanced"></i> Responsabilité Totale</div>
-                        <p>Les étudiants demeurent <strong>100% responsables</strong> de la rigueur scientifique, mathématique et de l'exactitude de tout code ou texte généré.</p>
+                        <div class="ai-box-title"><i class="fa-solid fa-wand-magic-sparkles"></i> LLM Autorisé en Outil Applicatif</div>
+                        <p>Un LLM (ChatGPT, Gemini, etc.) <strong>peut être utilisé dans l'interface applicative</strong> uniquement comme outil d'assistance (explicabilité des prédictions, recommandations, synthèses), PAS pour la prédiction.</p>
                     </div>
 
                     <div class="ai-box box-danger">
                         <div class="ai-box-title"><i class="fa-solid fa-triangle-exclamation"></i> Audition Orale d'Audit</div>
-                        <p>En cas de suspicion d'IA non vérifiée (hallucinations, concepts incohérents), les étudiants seront <strong>convoqués individuellement à une audition orale d'évaluation</strong>.</p>
+                        <p>En cas de suspicion d'utilisation d'IA non maîtrisée ou d'hallucinations scientifiques, les étudiants seront <strong>convoqués à une audition orale d'évaluation</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -212,12 +212,12 @@
             <!-- Supervised Tab Content -->
             <div id="tab-supervised" class="tab-content active">
                 <div class="glass-card">
-                    <h3><i class="fa-solid fa-brain"></i> Algorithmes Obligatoires à Implémenter</h3>
+                    <h3><i class="fa-solid fa-brain"></i> Algorithmes à Implémenter & Optimisation</h3>
                     <div class="algo-grid">
                         <div class="algo-item">
                             <span class="algo-badge">01</span>
                             <h4>Baseline (Zero-R)</h4>
-                            <p>Classifieur naïf de référence basé sur la classe prioritaire.</p>
+                            <p>Classifieur naïf de référence basé sur la classe prioritaire (Exempté d'optimisation).</p>
                         </div>
                         <div class="algo-item">
                             <span class="algo-badge">02</span>
@@ -242,14 +242,11 @@
                     </div>
 
                     <div class="metrics-bar">
-                        <strong><i class="fa-solid fa-chart-line"></i> Métriques d'Évaluation Exigées :</strong> 
-                        <span class="tag">Matrice de Confusion</span>
-                        <span class="tag">Accuracy</span>
-                        <span class="tag">Précision</span>
-                        <span class="tag">Rappel</span>
-                        <span class="tag">F1-Score</span>
-                        <span class="tag">Courbes ROC-AUC</span>
+                        <strong><i class="fa-solid fa-sliders"></i> Optimisation & Validation :</strong> 
+                        <span class="tag">GridSearchCV / RandomizedSearchCV Obligatoire</span>
                         <span class="tag">K-Fold Cross Validation ($K \ge 5$)</span>
+                        <span class="tag">Extensions ML Classiques Autorisées</span>
+                        <span class="tag">Pas de Deep Learning / LLM pour ML</span>
                     </div>
                 </div>
             </div>
@@ -282,11 +279,10 @@
                     </div>
 
                     <div class="metrics-bar">
-                        <strong><i class="fa-solid fa-chart-line"></i> Métriques d'Évaluation Exigées :</strong> 
+                        <strong><i class="fa-solid fa-chart-line"></i> Métriques & Optimisation :</strong> 
                         <span class="tag">Score de Silhouette $s(i)$</span>
                         <span class="tag">Indice Davies-Bouldin (DBI)</span>
-                        <span class="tag">Indice de Dunn</span>
-                        <span class="tag">Rand Index (ARI/NMI)</span>
+                        <span class="tag">Balayage Systématique des Hyperparamètres</span>
                         <span class="tag">Projection PCA 2D/3D</span>
                     </div>
                 </div>
@@ -321,22 +317,22 @@
                         </tr>
                         <tr>
                             <td><strong>1.1 Prétraitement des Données</strong></td>
-                            <td>Nettoyage des valeurs manquantes/aberrantes, encodage (One-Hot/Label/Binary), normalisation/standardisation ($Z$-score/Min-Max/Robust Scaling).</td>
+                            <td>Nettoyage des valeurs manquantes/aberrantes, encodage (One-Hot/Label/Binary), normalisation ($Z$-score/Min-Max). Dataset initial $\ge 10\,000$ enregistrements bruts et $\ge 10$ attributs. (Le jeu nettoyé peut comporter $< 10\,000$ lignes).</td>
                             <td><span class="badge-pts">2.0 pts</span></td>
                         </tr>
                         <tr>
                             <td><strong>1.2 EDA & Tests Statistiques</strong></td>
-                            <td>Visualisations des distributions, matrice de corrélation, tests statistiques ($\chi^2$, Mann-Whitney $U$, ANOVA, Shapiro-Wilk, Spearman/Pearson).</td>
+                            <td>Visualisations des distributions, corrélation et <strong>réalisation d'au moins 2 tests/analyses statistiques appropriés</strong> ($\chi^2$, test $t$ / Mann-Whitney $U$, ANOVA, Shapiro-Wilk, Pearson/Spearman) avec <strong>justification obligatoire</strong> de leur adéquation.</td>
                             <td><span class="badge-pts">3.0 pts</span></td>
                         </tr>
                         <tr>
                             <td><strong>1.3 Implémentation des Modèles</strong></td>
-                            <td>Implémentation rigoureuse de TOUS les algorithmes du parcours choisi (Zero-R, KNN, Arbre/RF, Naïve Bayes, SVM ou K-Means, PAM, AGNES, DIANA).</td>
+                            <td>Implémentation et comparaison des algorithmes du cours pour le parcours choisi. Extension possible à d'autres algorithmes ML classiques. <strong>Deep Learning et LLM strictly interdits comme modèles ML</strong>.</td>
                             <td><span class="badge-pts">1.0 pt</span></td>
                         </tr>
                         <tr>
                             <td><strong>1.4 Optimization & Validation Croisée</strong></td>
-                            <td>Réglage des hyperparamètres (GridSearch/RandomSearch) et validation croisée K-Fold ($K \ge 5$).</td>
+                            <td><strong>Optimisation systématique obligatoire d'au moins une méthode</strong> (<code>GridSearchCV</code> ou <code>RandomizedSearchCV</code> avec $K$-Fold $K \ge 5$) pour tous les modèles réglables (Zero-R exempté).</td>
                             <td><span class="badge-pts">2.0 pts</span></td>
                         </tr>
                         <tr>
@@ -350,17 +346,17 @@
                         </tr>
                         <tr>
                             <td><strong>2.1 Architecture UI & Stabilité</strong></td>
-                            <td>Application web/desktop fonctionnelle sans bugs (Streamlit, Gradio, Dash), code propre dans <code>src/app.py</code>.</td>
+                            <td>Application fonctionnelle exécutable localement (déploiement cloud optionnel). Code propre dans <code>src/app.py</code>. Hébergement sur stockage externe adapté si jeu de données volumineux (> 100 Mo).</td>
                             <td><span class="badge-pts">1.5 pts</span></td>
                         </tr>
                         <tr>
                             <td><strong>2.2 Dashboard EDA Interactif</strong></td>
-                            <td>Composant d'exploration dynamique permettant de filtrer les données et visualiser interactivement les graphiques.</td>
+                            <td>Dashboard comprenant <strong>au minimum les 6 éléments exigés</strong> : (1) stats descriptives, (2) données manquantes, (3) distributions numériques, (4) fréquences catégorielles, (5) corrélation et (6) au moins 1 filtre interactif.</td>
                             <td><span class="badge-pts">1.0 pt</span></td>
                         </tr>
                         <tr>
                             <td><strong>2.3 Prédiction Temps Réel</strong></td>
-                            <td>Formulaire dynamique de saisie générant des prédictions instantanées avec confiance/probabilité associée.</td>
+                            <td>Formulaire dynamique de saisie générant des prédictions/clusterings instantanés. (Intégration d'un LLM autorisée uniquement comme outil applicatif d'explicabilité ou de conseil).</td>
                             <td><span class="badge-pts">1.5 pts</span></td>
                         </tr>
 

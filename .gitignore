@@ -1,6 +1,4 @@
-# LaTeX source and build files (keep only HTML web page & compiled PDF in git repo)
-*.tex
-*.sh
+# LaTeX build temporary files
 *.aux
 *.log
 *.out
