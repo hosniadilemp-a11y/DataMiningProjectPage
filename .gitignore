@@ -1,4 +1,6 @@
-# LaTeX build temporary files
+# LaTeX source and build files (keep only HTML web page & compiled PDF in git repo)
+*.tex
+*.sh
 *.aux
 *.log
 *.out
@@ -14,4 +16,5 @@ compilation.log
 .DS_Store
 .vscode/
 .idea/
+
 
