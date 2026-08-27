@@ -12,7 +12,7 @@ BOLD='\033[1m'
 NC='\033[0m'
 
 ROOT_DIR="/home/adel/Documents/Data_mining_Course"
-PROPOSAL_DIR="$ROOT_DIR/MiniProject_Proposal"
+PROPOSAL_DIR="$ROOT_DIR/proposals_and_projects/MiniProject_Proposal"
 PDF_OUTPUT_DIR="$ROOT_DIR/PDFs_of_PPTs"
 
 mkdir -p "$PDF_OUTPUT_DIR"

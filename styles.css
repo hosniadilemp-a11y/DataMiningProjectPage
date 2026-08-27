@@ -671,6 +671,14 @@ h1, h2, h3, h4 {
     font-family: var(--font-code);
     font-weight: 600;
     font-size: 0.85rem;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.styled-table td:last-child {
+    white-space: nowrap;
+    text-align: center;
+    width: 90px;
 }
 
 /* Email Subject Builder */
